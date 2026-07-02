@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="100%" height="100%">
+  <defs>
+    <!-- Deep Premium Dark Base (Matches image_47aa7e.jpg background seamlessly) -->
+    <linearGradient id="premiumBG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="40%" stop-color="#141a22" />
+      <stop offset="100%" stop-color="#1e2530" />
+    </linearGradient>
+
+    <!-- Master Metallic Corporate Orange -->
+    <linearGradient id="metaOrange" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b54b0d" />
+      <stop offset="40%" stop-color="#e17b34" />
+      <stop offset="100%" stop-color="#f59e5d" />
+    </linearGradient>
+
+    <!-- Fluid Gold / Silk Ribbon Gradient -->
+    <linearGradient id="fluidGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0e0" />
+      <stop offset="30%" stop-color="#f1a972" />
+      <stop offset="70%" stop-color="#d46a24" />
+      <stop offset="100%" stop-color="#141a22" />
+    </linearGradient>
+
+    <!-- Glassmorphic Translucent Panel Fill -->
+    <linearGradient id="glassPanel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Tech Wireframe Grid Pattern -->
+    <pattern id="blueprintGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.03" />
+      <circle cx="0" cy="0" r="1" fill="#ffffff" fill-opacity="0.1" />
+    </pattern>
+
+    <!-- High-End Soft Focus Glow -->
+    <filter id="epicGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Drop Shadow for 3D Depth -->
+    <filter id="panelShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="600" fill="url(#premiumBG)" />
+  
+  <!-- Left Side Fade-to-Transparent Masking (For clean overlay behind hero text) -->
+  <rect width="450" height="600" fill="url(#premiumBG)" opacity="0.4" />
+
+  <!-- Engineering Blueprint Grid Base -->
+  <rect width="900" height="600" fill="url(#blueprintGrid)" />
+
+  <!-- Ambient Luxury Lighting (Deep Orange/Gold back-glows) -->
+  <circle cx="650" cy="300" r="280" fill="#e17b34" opacity="0.04" filter="url(#epicGlow)" />
+  <circle cx="550" cy="200" r="180" fill="#f1a972" opacity="0.03" filter="url(#epicGlow)" />
+
+  <!-- Dynamic Vector Tracks (Representing Logistics & Procurement Networks) -->
+  <g opacity="0.25">
+    <path d="M 300,450 C 450,500 700,480 850,300" fill="none" stroke="url(#metaOrange)" stroke-width="1.5" stroke-dasharray="8 4" />
+    <path d="M 400,150 C 550,80 750,120 880,250" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.4" />
+    <path d="M 250,300 C 450,200 600,450 950,200" fill="none" stroke="#f1a972" stroke-width="0.75" />
+  </g>
+
+  <!-- Main Focal Composition (Shifted right to balance index.html text alignment) -->
+  <g transform="translate(580, 280)">
+    
+    <!-- ISOMETRIC ARCHITECTURE / INTEGRATED INFRASTRUCTURE (Construction & QS) -->
+    <!-- Tower Block 1 (The Foundation) -->
+    <g transform="translate(-140, 40)" filter="url(#panelShadow)">
+      <path d="M0,0 L45,-22 L90,0 L90,140 L45,162 L0,140 Z" fill="#141a22" stroke="#2d3745" stroke-width="1" />
+      <path d="M45,-22 L90,0 L90,140 L45,162 Z" fill="#1e2530" stroke="#2d3745" stroke-width="1" />
+      <!-- Glowing Tech Lines on Tower Facing -->
+      <path d="M 55,20 L 55,130 M 70,10 L 70,120 M 80,30 L 80,90" stroke="url(#metaOrange)" stroke-width="1" opacity="0.4" stroke-linecap="round" />
+      <!-- Solid Isometric Roof Accent -->
+      <path d="M0,0 L45,-22 L90,0 L45,22 Z" fill="url(#metaOrange)" opacity="0.15" />
+    </g>
+
+    <!-- Tower Block 2 (The Premium Glass Centerpiece) -->
+    <g transform="translate(-50, -30)" filter="url(#panelShadow)">
+      <!-- Back Wall -->
+      <path d="M0,0 L55,-27 L110,0 L110,210 L55,237 L0,210 Z" fill="url(#glassPanel)" stroke="#414f63" stroke-width="1" />
+      <!-- Front Structural Frame -->
+      <path d="M0,0 L55,27 L110,0" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.5" />
+      <path d="M0,210 L55,237 L110,210" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.5" />
+      <line x1="55" y1="27" x2="55" y2="237" stroke="#ffffff" stroke-width="1.5" opacity="0.3" />
+      <!-- Interior Pulse Core (Energy Molecule/Procurement Node) -->
+      <cyan-core transform="translate(55, 100)">
+        <line x1="-30" y1="-20" x2="30" y2="20" stroke="#f1a972" stroke-width="1" opacity="0.5"/>
+        <line x1="-30" y1="20" x2="30" y2="-20" stroke="#f1a972" stroke-width="1" opacity="0.5"/>
+        <circle cx="0" cy="0" r="12" fill="url(#metaOrange)" filter="url(#epicGlow)"/>
+        <circle cx="-30" cy="-20" r="4" fill="#ffffff"/>
+        <circle cx="30" cy="20" r="4" fill="#f1a972"/>
+        <circle cx="-30" cy="20" r="4" fill="#e17b34"/>
+        <circle cx="30" cy="-20" r="4" fill="#ffffff"/>
+      </cyan-core>
+      <!-- Refractive Glass Surface Shimmer -->
+      <path d="M0,0 L55,27 L55,237 L0,210 Z" fill="#ffffff" opacity="0.03" />
+    </g>
+
+    <!-- THE FLIGHT COMPONENT (Cinematic Golden-Ratio Swooping Wings) -->
+    <!-- Behind Elements Wing Shadow Layer -->
+    <path d="M -180,60 C -80,-40 100,-80 260,-190 C 140,-70 30,-30 -70,20 C -120,45 -160,55 -180,60 Z" 
+          fill="#0d1117" opacity="0.5" filter="url(#panelShadow)" />
+
+    <!-- Main Majestic Wing (Where Customer Delight Takes Flight) -->
+    <path d="M -160,50 C -70,-40 110,-90 280,-210 C 170,-80 40,-40 -50,15 C -105,40 -140,48 -160,50 Z" 
+          fill="url(#fluidGold)" filter="url(#epicGlow)" opacity="0.9" />
+
+    <!-- Secondary Kinetic Wing Segment -->
+    <path d="M -120,80 C -40,0 130,-40 290,-150 C 190,-50 70,-20 -20,35 C -65,58 -100,72 -120,80 Z" 
+          fill="url(#metaOrange)" opacity="0.85" />
+
+    <!-- Pure Light Edge Highlight Filament -->
+    <path d="M -160,50 C -70,-40 110,-90 280,-210" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.75" />
+    
+    <!-- Micro-Velocity Particles / High-End Polish Finish -->
+    <g fill="#ffffff">
+      <circle cx="295" cy="-220" r="3" opacity="0.9" filter="url(#epicGlow)" />
+      <circle cx="310" cy="-205" r="1.5" opacity="0.6" />
+      <circle cx="270" cy="-170" r="2" opacity="0.4" />
+      <circle cx="240" cy="-230" r="1" opacity="0.5" />
+      <circle cx="-15" cy="180" r="2.5" fill="#f1a972" opacity="0.7" />
+      <circle cx="120" cy="110" r="3" fill="#e17b34" opacity="0.5" />
+    </g>
+
+    <!-- Institutional Quality/Precision Indicators (Fine Crosshairs) -->
+    <g stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.3" fill="none">
+      <!-- Top Right Crosshair -->
+      <path d="M 250,-120 L 270,-120 M 260,-130 L 260,-110" />
+      <!-- Center Precision Coordinates -->
+      <circle cx="-140" cy="40" r="6" stroke="#e17b34" stroke-width="1" />
+      <line x1="-140" y1="30" x2="-140" y2="50" />
+      <!-- Abstract Dimension Line -->
+      <path d="M -50,225 L 60,225" stroke="#f1a972" stroke-width="0.5" stroke-dasharray="3 3" />
+      <path d="M -50,221 L -50,229 M 60,221 L 60,229" stroke="#f1a972" stroke-width="1" />
+    </g>
+
+    <!-- Soft Golden Foreground Shard -->
+    <path d="M 30,120 L 90,60 L 140,110 L 70,160 Z" fill="url(#glassPanel)" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.15" filter="url(#panelShadow)" />
+    <path d="M 30,120 L 90,60" stroke="url(#fluidGold)" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+
+  </g>
+
+  <!-- Elegant Framing/Border Accents for Executive Feel -->
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.03" />
+</svg>

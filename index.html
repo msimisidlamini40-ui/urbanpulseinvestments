@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Pulse Investments — Eswatini</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/tabler-icons.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <img src="images/logo.png.jpeg" alt="Urban Pulse Investments Logo">
+      <span class="nav-brand">Urban <span>Pulse</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Projects</a></li>
+      <li><a href="#deliveries">Deliveries</a></li>
+      <li><a href="#directors">Leadership</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a quote</button>
+
+    <!-- Mobile Hamburger -->
+    <button class="nav-hamburger" id="navHamburger" onclick="toggleMobileNav()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-mobile-overlay" id="mobileNavOverlay">
+    <ul>
+      <li><a href="#about" onclick="closeMobileNav()">About Us</a></li>
+      <li><a href="#services" onclick="closeMobileNav()">Services</a></li>
+      <li><a href="#gallery" onclick="closeMobileNav()">Gallery</a></li>
+      <li><a href="#deliveries" onclick="closeMobileNav()">Deliveries</a></li>
+      <li><a href="#directors" onclick="closeMobileNav()">Directors</a></li>
+      <li><a href="#references" onclick="closeMobileNav()">References</a></li>
+      <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta-mobile" onclick="closeMobileNav()">Get a Quote</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Proudly Swazi &middot; Est. October 2025</div>
+      <h1>Where Customer<br>Delight Takes <em>Flight</em></h1>
+      <p class="hero-tagline">Urban Pulse Investments is a registered, multi-disciplinary Swazi company delivering quality goods, construction services, pertaining office equipment supply, agricultural inputs supply ,ICT equipments and professional procurement solutions across the Kingdom of Eswatini.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Explore our services</button>
+        <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request a quote</button>
+      </div>
+    </div>
+    <div class="hero-reg">
+      <div>Reg No. R7/75486 &middot; Licence MBA 8104/2025</div>
+      <div>Dlanubeka Building, Mbabane, Eswatini</div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <div class="trust-bar">
+    <div class="trust-item">
+      <i class="ti ti-certificate trust-icon"></i>
+      <div>
+        <div class="trust-label">Registered</div>
+        <div class="trust-val">Companies Act No. 8 of 2009</div>
+      </div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <i class="ti ti-license trust-icon"></i>
+      <div>
+        <div class="trust-label">Trading Licence</div>
+        <div class="trust-val">MBA 8104/2025</div>
+      </div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <i class="ti ti-building trust-icon"></i>
+      <div>
+        <div class="trust-label">Company No.</div>
+        <div class="trust-val">R7/75486</div>
+      </div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <i class="ti ti-map-pin trust-icon"></i>
+      <div>
+        <div class="trust-label">Headquarters</div>
+        <div class="trust-val">Mbabane, Hhohho Region</div>
+      </div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <i class="ti ti-layers-intersect trust-icon"></i>
+      <div>
+        <div class="trust-label">Capability</div>
+        <div class="trust-val">Multi-sector &middot; End-to-end</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="about-visual">
+      <img src="images/About v2.png" alt="Urban Pulse Investments field work">
+      <div class="about-overlay">
+        <p class="about-quote">"We don't just supply goods — we deliver confidence. Every order, every project, every client."</p>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="label-tag" style="color:var(--orange)">Who We Are</div>
+      <div class="serif-title" style="color:#fff;font-size:38px;">A bold new force<br>in Eswatini supply</div>
+      <p class="about-body">Urban Pulse Investments (Pty) Ltd is a registered, multi-disciplinary Swazi company founded in October 2025. We exist to fill a clear gap in the Eswatini market: the need for a reliable, professional, and flexible supply-and-services partner that businesses, NGOs, and parastatals can trust.</p>
+      <p class="about-body" style="margin-top:1rem;">We bring the professionalism of a large firm with the agility and personal attention of a dedicated partner. Our leadership team has hands-on experience across supply chain coordination, Office supplies , Agriculture supplies and construction, and business development — ensuring every engagement is handled with expertise and care.</p>
+      <div class="reg-pills">
+        <div class="reg-pill">Co. ID: <span>202510311031580</span></div>
+        <div class="reg-pill">Cert. No: <span>3158 of 2025</span></div>
+        <div class="reg-pill">BIN: <span>2025111311105076</span></div>
+        <div class="reg-pill">General Dealer's Licence</div>
+        <div class="reg-pill">Mbabane &middot; Hhohho Region</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services">
+    <div class="services-header">
+      <div>
+        <div class="label-tag">Our Services</div>
+        <div class="serif-title">Integrated solutions,<br>one trusted partner</div>
+      </div>
+      <p class="serif-sub">Urban Pulse brings supply, construction, quantity surveying, logistics, and project management under one roof — so you don't need to coordinate multiple contractors.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="svc">
+        <div class="svc-num">01</div>
+        <div class="svc-icon"><i class="ti ti-package"></i></div>
+        <div class="svc-name">General Supply of Goods &amp; Equipment</div>
+        <div class="svc-desc">Sourcing and supplying quality products across electronics, agriculture, office equipment, and industrial supplies — delivered on time, every time.</div>
+        <ul class="svc-items">
+          <li>Electronics &amp; ICT equipment</li>
+          <li>Office and household equipment</li>
+          <li>Farming tools, machinery &amp; agricultural inputs</li>
+          <li>Industrial and workshop supplies</li>
+          <li>General commercial goods and materials</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <div class="svc-num">02</div>
+        <div class="svc-icon"><i class="ti ti-building-factory-2"></i></div>
+        <div class="svc-name">Construction Services</div>
+        <div class="svc-desc">From residential builds to commercial civil works — we plan, supervise, and deliver construction projects with quality craftsmanship and professional oversight.</div>
+        <ul class="svc-items">
+          <li>Building construction (residential &amp; commercial)</li>
+          <li>Renovations &amp; refurbishments</li>
+          <li>Civil works and site preparation</li>
+          <li>Structural improvements and additions</li>
+          <li>Project supervision and quality monitoring</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <div class="svc-num">03</div>
+        <div class="svc-icon"><i class="ti ti-calculator"></i></div>
+        <div class="svc-name">Quantity Surveying &amp; Cost Consulting</div>
+        <div class="svc-desc">Our QS consultation service helps clients understand the true cost of their projects before committing — bridging the gap between supply and construction.</div>
+        <ul class="svc-items">
+          <li>Project cost estimation and budgeting</li>
+          <li>Material take-offs and BOQ preparation</li>
+          <li>Pre-construction cost planning</li>
+          <li>Procurement advisory for construction projects</li>
+          <li>Value engineering and cost optimisation</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <div class="svc-num">04</div>
+        <div class="svc-icon"><i class="ti ti-shopping-cart"></i></div>
+        <div class="svc-name">Procurement Services</div>
+        <div class="svc-desc">End-to-end procurement support for organisations that need compliant, competitive, and well-documented sourcing processes.</div>
+        <ul class="svc-items">
+          <li>Supplier identification &amp; coordination</li>
+          <li>Sourcing of specialised goods and materials</li>
+          <li>Competitive quotation sourcing</li>
+          <li>Procurement documentation support</li>
+          <li>Tender response assistance</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <div class="svc-num">05</div>
+        <div class="svc-icon"><i class="ti ti-truck-delivery"></i></div>
+        <div class="svc-name">Logistics &amp; Delivery</div>
+        <div class="svc-desc">Safe, coordinated collection and delivery of goods across Eswatini, including last-mile solutions to reach clients wherever they operate.</div>
+        <ul class="svc-items">
+          <li>Safe collection and delivery of goods</li>
+          <li>Supply chain coordination</li>
+          <li>Transport of equipment and materials</li>
+          <li>Last-mile delivery solutions</li>
+        </ul>
+      </div>
+
+      <div class="svc">
+        <div class="svc-num">06</div>
+        <div class="svc-icon"><i class="ti ti-clipboard-list"></i></div>
+        <div class="svc-name">Project Management</div>
+        <div class="svc-desc">Comprehensive project management from initial planning through to handover — keeping projects on schedule, on budget, and to specification.</div>
+        <ul class="svc-items">
+          <li>Planning and project scheduling</li>
+          <li>Contractor engagement and management</li>
+          <li>Quality control and site monitoring</li>
+          <li>Client reporting and progress updates</li>
+          <li>Installation &amp; maintenance coordination</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== PROJECT GALLERY — BENTO ===== -->
+  <section id="gallery">
+    <div class="gallery-header">
+      <div class="label-tag">Our Projects</div>
+      <div class="serif-title">From the ground up —<br>our work in Eswatini</div>
+      <p class="serif-sub">A look at the sites, civil works, ICT office equipments ,office equiments , agricultural supplies and engagements delivered by Urban Pulse across the Kingdom.</p>
+    </div>
+    <div class="bento">
+
+     <div class="bcard bc1">
+        <img src="images/image 0.1.png" alt="Office equipment delivery - unloading the copie">
+        <div class="bcard-tag">Office Logistics</div>
+        <div class="bcard-info">
+          <div class="bcard-title">Equipment Delivery — Copier Unloading</div>
+          <div class="bcard-desc">Securing and unloading a commercial office printer from the back of a pickup Urban Pulse Van.</div>
+        </div>
+      </div>
+
+
+      <div class="bcard bc2">
+        <img src="images/gallery -1.jpeg" alt="Bulk storage - agri-supply warehouse">
+        <div class="bcard-tag">Agriculture</div>
+        <div class="bcard-info">
+          <div class="bcard-title">Bulk Storage — Agri-supply warehouse</div>
+          <div class="bcard-desc">Rows of large white bulk bags filled with agricultural supplies organized neatly inside a distribution warehouse.</div>
+        </div>
+      </div>
+
+      <div class="bcard bc3">
+        <img src="images/gallery -2.jpeg" alt="Foundation works underway">
+        <div class="bcard-tag">Civil Works</div>
+        <div class="bcard-info">
+          <div class="bcard-title">Foundation works underway</div>
+          <div class="bcard-desc">Materials staged and crew on ground — building progress from day one.</div>
+        </div>
+      </div>
+
+      <div class="bcard bc4">
+        <img src="images/gallery-3.jpeg" alt="Site supervision and machine operation">
+        <div class="bcard-tag">Earthworks</div>
+        <div class="bcard-info">
+          <div class="bcard-title">Site supervision &amp; machine operation</div>
+          <div class="bcard-desc">Director overseeing JCB operations on highland terrain — precision earthworks management.</div>
+        </div>
+      </div>
+
+      <div class="bcard bc5">
+        <img src="images/gallery-4.jpeg" alt="Rock clearance and land preparation">
+        <div class="bcard-tag">Heavy Equipment</div>
+        <div class="bcard-info">
+          <div class="bcard-title">Rock clearance &amp; land preparation</div>
+          <div class="bcard-desc">JCB loader removing a large boulder during site clearing in the Hhohho highlands.</div>
+        </div>
+      </div>
+
+      <div class="bcard bc6">
+        <img src="images/gallery-5.png" alt="Offloading a large printer from a truck">
+        <div class="bcard-tag">Logistics & Delivery Office Equipment</div>
+        <div class="bcard-info">
+          <div class="bcard-title">Equipment Offloading</div>
+          <div class="bcard-desc">Our Team are pictured on the tailgate of a white pickup truck, carefully handling a large, heavy-duty office printer or copier. The machine is wrapped in protective clear plastic and secured with heavy-duty orange ratchet tie-down straps.</div>
+        </div>
+      </div>
+
+      <div class="bcard bc7">
+        <img src="images/gallery-6.jpg" alt="Tank installation site review">
+        <div class="bcard-tag">Inspection</div>
+        <div class="bcard-info">
+          <div class="bcard-title">Tank installation site review</div>
+          <div class="bcard-desc">Urban Pulse team conducting a quality inspection of large tank infrastructure delivery.</div>
+        </div>
+      </div>
+
+      <div class="bcard bc7">
+        <img src="images/gallery-6.png" alt="Logistics delivery truck with equipment">
+        <div class="bcard-tag">Logistics & Supply</div>
+        <div class="bcard-info">
+          <div class="bcard-title">Equipment Delivery</div>
+          <div class="bcard-desc">Secure and efficient transit of specialized commercial assets delivered safely on site.</div>
+        </div>
+      </div>
+
+      <div class="bcard bc8">
+        <img src="images/gallery-8.png" alt="Agricultural inputs delivered to a client">
+        <div class="bcard-tag">Agricultural Supply</div>
+        <div class="bcard-info">
+          <div class="bcard-title">Agricultural inputs delivered on-site</div>
+          <div class="bcard-desc">Comprehensive supply including maize seed, fertilizer, agrochemicals, and irigation parts.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== DELIVERIES & LOGISTICS SHOWCASE ===== -->
+  <section id="deliveries">
+    <div class="deliveries-header">
+      <div class="label-tag">Deliveries &amp; Logistics</div>
+      <div class="serif-title">We don't just procure —<br>we deliver, end to end</div>
+      <p class="serif-sub">From sourcing equipment in South Africa to last-mile delivery across Eswatini, our logistics capability ensures every order arrives safely, on time, at your door.</p>
+    </div>
+
+    <!-- Featured Video -->
+    <div class="deliveries-video-wrap">
+      <video controls preload="metadata" poster="">
+        <source src="images/delivery-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <p class="deliveries-video-caption">Urban Pulse Investments — live logistics operation: equipment collection and delivery in Eswatini.</p>
+
+    <!-- Photo Grid -->
+    <div class="deliveries-grid">
+
+      <div class="del-card" tabindex="0" role="button" aria-label="View larger: Brassia Logistics Truck — Transport Partner" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}" onclick="openLightbox('del-img-1','Brassia Logistics Truck — Transport Partner','Urban Pulse works with trusted logistics partners including Brassia Logistics to move freight reliably across the region.')">
+        <img id="del-img-1" src="images/deliveryimage.jpeg" alt="Brassia Logistics Truck — Transport Partner">
+        <div class="del-info">
+          <span class="del-badge">Logistics</span>
+          <div class="del-title">Brassia Logistics — freight partner</div>
+          <div class="del-desc">Reliable curtain-side truck used to move large equipment orders.</div>
+        </div>
+      </div>
+
+      <div class="del-card" tabindex="0" role="button" aria-label="View larger: Canon imageRUNNER C3226i — New in Box" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}" onclick="openLightbox('del-img-2','Canon imageRUNNER C3226i — New in Box','Brand-new Canon imageRUNNER C3226i colour multifunction printer, freshly sourced and ready for client delivery.')">
+        <img id="del-img-2" src="images/canon.jpeg" alt="Canon imageRUNNER C3226i — New in Box">
+        <div class="del-info">
+          <span class="del-badge">ICT Equipment</span>
+          <div class="del-title">Canon imageRUNNER C3226i — sourced</div>
+          <div class="del-desc">New-in-box Canon copier procured and prepared for client handover.</div>
+        </div>
+      </div>
+
+      <div class="del-card" tabindex="0" role="button" aria-label="View larger: On-Site Delivery — Equipment Unpacking" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}" onclick="openLightbox('del-img-3','On-Site Delivery — Equipment Unpacking','Our team handles the full last-mile delivery: unpacking, positioning, and installation-ready placement at the client site.')">
+        <img id="del-img-3" src="images/lastmile.jpeg" alt="On-Site Delivery — Equipment Unpacking">
+        <div class="del-info">
+          <span class="del-badge">Last Mile</span>
+          <div class="del-title">On-site delivery &amp; unpacking</div>
+          <div class="del-desc">Full-service delivery including unpacking and positioning at the client premises.</div>
+        </div>
+      </div>
+
+      <div class="del-card" tabindex="0" role="button" aria-label="View larger: Equipment Offloading — Careful Handling" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}" onclick="openLightbox('del-img-4','Equipment Offloading — Careful Handling','Two-person team carefully offloading a wrapped Canon copier from the bakkie — ensuring zero damage during transit.')">
+        <img id="del-img-4" src="images/ICT EQUIPMENT.jpeg" alt="Equipment Offloading — Careful Handling">
+        <div class="del-info">
+          <span class="del-badge">Handling</span>
+          <div class="del-title">Careful offloading — zero damage</div>
+          <div class="del-desc">Professional two-man offloading of sensitive ICT equipment, fully wrapped for protection.</div>
+        </div>
+      </div>
+
+      <div class="del-card" tabindex="0" role="button" aria-label="View larger: Assorted pens and office organiser supplie" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}" onclick="openLightbox('del-img-5','Loaded Bakkie — Ready for Delivery','Canon copier plus accessory boxes loaded in the Toyota Hilux Raider — our light-delivery vehicle for client deliveries across Eswatini.')">
+        <img id="del-img-5" src="images/delivery 4.png" alt="filing supplies">
+        <div class="del-info">
+          <span class="del-badge">Office Supply</span>
+          <div class="del-title">Loaded &amp;Desk & filing supplies </div>
+          <div class="del-desc">Pens, organisers, and filing essentials — equipping offices with the basics that keep operations running.</div>
+        </div>
+      </div>
+
+      <div class="del-card" tabindex="0" role="button" aria-label="View larger: Office stationery and printer paper supplies" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}" onclick="openLightbox('del-img-5','Loaded Bakkie — Ready for Delivery','Canon copier plus accessory boxes loaded in the Toyota Hilux Raider — our light-delivery vehicle for client deliveries across Eswatini.')">
+        <img id="del-img-5" src="images/delivery-5.png" alt="Office Equipment">
+        <div class="del-info">
+          <span class="del-badge">Office Supply</span>
+          <div class="del-title">Loaded &amp; Stationery & paper supply</div>
+          <div class="del-desc">Printer paper, files, and everyday office consumables sourced and supplied to client offices across Eswatini.</div>
+        </div>
+      </div> 
+
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="del-lightbox" id="delLightbox" onclick="closeLightbox(event)">
+    <button class="del-lightbox-close" onclick="closeLightbox()" aria-label="Close image preview">&#x2715;</button>
+    <img id="delLightboxImg" src="" alt="">
+    <p class="del-lightbox-caption" id="delLightboxCaption"></p>
+  </div>
+
+  <!-- ===== VISION / MISSION / VALUES ===== -->
+  <section id="values">
+    <div class="label-tag" style="color:var(--orange)">Our Principles</div>
+    <div class="serif-title" style="color:#fff;margin-top:0.5rem;">Vision, Mission &amp; Values</div>
+    <div class="vmv-grid">
+      <div class="vmv-card">
+        <div class="vmv-label">Our Vision</div>
+        <div class="vmv-title">Reliable. Efficient. High-quality.</div>
+        <div class="vmv-body">To provide reliable, efficient, and high-quality supply and construction solutions that support our clients' operational goals — while maintaining the highest standards of professionalism and service delivery.</div>
+      </div>
+      <div class="vmv-card">
+        <div class="vmv-label">Our Mission</div>
+        <div class="vmv-title">A trusted partner across all sectors</div>
+        <div class="vmv-body">To become a trusted, leading supplier and construction partner in Eswatini and beyond — known for excellence, integrity, and the ability to deliver comprehensive solutions across multiple sectors.</div>
+      </div>
+      <div class="vmv-card">
+        <div class="vmv-label">Our Tagline</div>
+        <div class="vmv-title">"Where Customer Delight Takes Flight"</div>
+        <div class="vmv-body">Every engagement at Urban Pulse is guided by a genuine commitment to making our clients' experience exceptional — from first inquiry to final delivery. Customer delight is not a slogan, it is our standard.</div>
+      </div>
+    </div>
+    <div class="values-row">
+      <div class="val-cell">
+        <div class="val-name">Integrity</div>
+        <div class="val-body">Honesty, transparency and accountability in every interaction. What we promise, we deliver.</div>
+      </div>
+      <div class="val-cell">
+        <div class="val-name">Reliability</div>
+        <div class="val-body">Consistent delivery on our commitments. Clients can count on us, every time.</div>
+      </div>
+      <div class="val-cell">
+        <div class="val-name">Quality</div>
+        <div class="val-body">Durable products, professional workmanship, and service standards that exceed expectations.</div>
+      </div>
+      <div class="val-cell">
+        <div class="val-name">Efficiency</div>
+        <div class="val-body">Fast, well-coordinated, and cost-effective solutions that respect clients' time and budgets.</div>
+      </div>
+      <div class="val-cell">
+        <div class="val-name">Client Focus</div>
+        <div class="val-body">Tailored services for each customer. No two clients are the same, and neither is our approach.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHO WE SERVE ===== -->
+  <section id="serve">
+    <div class="label-tag">Who We Serve</div>
+    <div class="serif-title">Built for every sector<br>in Eswatini</div>
+    <p class="serif-sub">Our flexible operating model meets the documentation and compliance standards of all client types.</p>
+    <div class="serve-grid">
+      <div class="serve-card">
+        <div class="serve-icon"><i class="ti ti-building-community"></i></div>
+        <div class="serve-name">Private Companies</div>
+        <div class="serve-desc">Supply, construction, and procurement support for businesses of all sizes.</div>
+      </div>
+      <div class="serve-card">
+        <div class="serve-icon"><i class="ti ti-home"></i></div>
+        <div class="serve-name">Individuals &amp; Households</div>
+        <div class="serve-desc">Home equipment sourcing, renovations, and construction for residential clients.</div>
+      </div>
+      <div class="serve-card">
+        <div class="serve-icon"><i class="ti ti-heart-handshake"></i></div>
+        <div class="serve-name">NGOs &amp; Non-Profits</div>
+        <div class="serve-desc">Compliant procurement and documentation meeting NGO reporting standards.</div>
+      </div>
+      <div class="serve-card">
+        <div class="serve-icon"><i class="ti ti-world"></i></div>
+        <div class="serve-name">Development Organisations</div>
+        <div class="serve-desc">Agricultural inputs, materials, and logistics for development programme delivery.</div>
+      </div>
+      <div class="serve-card">
+        <div class="serve-icon"><i class="ti ti-bank"></i></div>
+        <div class="serve-name">Government Parastatals</div>
+        <div class="serve-desc">Formal, compliant procurement and supply meeting public sector standards.</div>
+      </div>
+      <div class="serve-card">
+        <div class="serve-icon"><i class="ti ti-plant-2"></i></div>
+        <div class="serve-name">Agricultural Enterprises</div>
+        <div class="serve-desc">Farming tools, machinery, inputs, and last-mile logistics to farm gates.</div>
+      </div>
+      <div class="serve-card">
+        <div class="serve-icon"><i class="ti ti-crane"></i></div>
+        <div class="serve-name">Construction Firms</div>
+        <div class="serve-desc">Material supply, subcontracting, and QS support for construction companies.</div>
+      </div>
+      <div class="serve-card" style="background:var(--navy);border-color:var(--navy);">
+        <div class="serve-icon" style="color:var(--orange-light)"><i class="ti ti-infinity"></i></div>
+        <div class="serve-name" style="color:#fff;">End-to-End Delivery</div>
+        <div class="serve-desc" style="color:rgba(255,255,255,0.5);">Supply &middot; Construction &middot; QS &middot; Logistics &middot; Project Management — all under one roof.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIRECTORS ===== -->
+  <section id="directors">
+    <div class="label-tag">Leadership</div>
+    <div class="serif-title">Meet the directors</div>
+    <p class="serif-sub">Urban Pulse is owner-managed — when you work with us, you work directly with decision-makers who take your project personally.</p>
+    <div class="directors-grid">
+
+      <div class="dir-card">
+        <div class="dir-photo">
+          <img src="images/Director 1.jpeg" alt="Qiniso Ntsika Dlamini - Co-Founder &amp; Director">
+          <div class="dir-photo-overlay"></div>
+        </div>
+        <div class="dir-info">
+          <div class="dir-role">Co-Founder &amp; Director</div>
+          <div class="dir-name">Qiniso Ntsika Dlamini</div>
+          <div class="dir-divider"></div>
+          <div class="dir-bio">Ntsika brings hands-on experience in supply chain coordination, construction project management, and business development. He is the driving operational force behind Urban Pulse's field delivery capability — from site supervision to procurement execution.</div>
+          <div class="dir-quals">
+            <div class="dir-qual"><i class="ti ti-check"></i>Construction &amp; civil works oversight</div>
+            <div class="dir-qual"><i class="ti ti-check"></i>Supply chain &amp; procurement management</div>
+            <div class="dir-qual"><i class="ti ti-check"></i>Quantity surveying consultation</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dir-card">
+        <div class="dir-photo">
+          <img src="images/Director 2.jpeg" alt="Ntombi Natasha Maziya - Co-Founder &amp; Director">
+          <div class="dir-photo-overlay"></div>
+        </div>
+        <div class="dir-info">
+          <div class="dir-role">Co-Founder &amp; Director</div>
+          <div class="dir-name">Ntombi Natasha Maziya</div>
+          <div class="dir-divider"></div>
+          <div class="dir-bio">Ntombi leads Urban Pulse's business development and stakeholder engagement. With a sharp understanding of NGO, development, and government sectors, she ensures Urban Pulse's documentation, compliance, and client relations consistently exceed expectations.</div>
+          <div class="dir-quals">
+            <div class="dir-qual"><i class="ti ti-check"></i>Business development &amp; stakeholder engagement</div>
+            <div class="dir-qual"><i class="ti ti-check"></i>NGO, development &amp; public sector relations</div>
+            <div class="dir-qual"><i class="ti ti-check"></i>Compliance, documentation &amp; reporting</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== REFERENCES ===== -->
+  <section id="references">
+    <div class="label-tag" style="color:var(--orange)">References</div>
+    <div class="serif-title" style="color:#fff;">Trusted by respected<br>organisations</div>
+    <div class="ref-grid">
+      <div class="ref-card">
+        <div class="ref-org">Komati Downstream Development Project Farmers Federation (KDDPFF)</div>
+        <div class="ref-row"><i class="ti ti-phone ref-icon"></i><div class="ref-val">+268 7631 3142</div></div>
+        <div class="ref-row"><i class="ti ti-mail ref-icon"></i><div class="ref-val">kddpff@gmail.com</div></div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-org">Triomf Eswatini</div>
+        <div class="ref-row"><i class="ti ti-phone ref-icon"></i><div class="ref-val">+268 7602 0607</div></div>
+        <div class="ref-row"><i class="ti ti-mail ref-icon"></i><div class="ref-val">simphiwem@triomfeswatini.co.sz</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPLIANCE ===== -->
+  <section id="compliance">
+    <div class="label-tag">Registration &amp; Compliance</div>
+    <div class="serif-title">Fully registered,<br>fully trusted</div>
+    <div class="comp-grid">
+      <div>
+        <p style="font-size:14px;color:var(--gray);line-height:1.8;margin-bottom:1.5rem;">Urban Pulse Investments is a fully registered and compliant legal entity in the Kingdom of Eswatini. Our documentation meets the standards expected by formal organisations, NGOs, and government bodies.</p>
+        <table class="comp-table">
+          <tr><td>Full Legal Name</td><td>Urban Pulse Investments (Pty) Ltd</td></tr>
+          <tr><td>Trading Name</td><td>Urban Pulse Suppliers</td></tr>
+          <tr><td>Company Number</td><td>R7/75486</td></tr>
+          <tr><td>Company ID</td><td>202510311031580</td></tr>
+          <tr><td>Incorporation Certificate</td><td>3158 of 2025</td></tr>
+          <tr><td>Date of Incorporation</td><td>31 October 2025</td></tr>
+          <tr><td>Governing Legislation</td><td>Eswatini Companies Act No. 8 of 2009</td></tr>
+          <tr><td>Trading Licence</td><td>MBA 8104/2025</td></tr>
+          <tr><td>BIN</td><td>2025111311105076</td></tr>
+          <tr><td>Licence Type</td><td>General Dealer's Licence</td></tr>
+          <tr><td>Directors</td><td>Qiniso Ntsika Dlamini &amp; Ntombi Natasha Maziya</td></tr>
+          <tr><td>Registered Office</td><td>Dlanubeka House, Plot 2221, CNR Mdada &amp; Lalufadlwane, Mbabane</td></tr>
+        </table>
+      </div>
+      <div>
+        <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:0.5rem;">Why choose Urban Pulse?</p>
+        <p style="font-size:14px;color:var(--gray);margin-bottom:1.5rem;">In a market crowded with suppliers who treat clients as transaction numbers, Urban Pulse was built differently.</p>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-num">1</div>
+            <div><div class="why-title">End-to-End Capability</div><div class="why-body">Supply, QS, construction, logistics, and project management under one roof — no need to coordinate multiple contractors.</div></div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">2</div>
+            <div><div class="why-title">Locally Grounded</div><div class="why-body">A proudly Swazi company with deep understanding of local markets, suppliers, logistics, and regulations.</div></div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">3</div>
+            <div><div class="why-title">Agile &amp; Responsive</div><div class="why-body">Owner-managed with no bureaucratic layers — you deal directly with decision-makers who take your project personally.</div></div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">4</div>
+            <div><div class="why-title">Transparent &amp; Compliant</div><div class="why-body">Our documentation meets the standards of formal organisations, NGOs, and government bodies. Present our paperwork to any stakeholder with confidence.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="contact-visual">
+      <img src="images/contact.jpeg" alt="Urban Pulse Investments contact background">
+      <div class="contact-visual-overlay">
+        <div class="serif-title">Let's build<br>something together</div>
+        <div class="ci-row">
+          <i class="ti ti-phone ci-icon"></i>
+          <div><div class="ci-label">Telephone</div><div class="ci-val">+268 76 583 644<br>+268 79 583 644</div></div>
+        </div>
+        <div class="ci-row">
+          <i class="ti ti-mail ci-icon"></i>
+          <div><div class="ci-label">Email</div><div class="ci-val">urbanpulse145@gmail.com</div></div>
+        </div>
+        <div class="ci-row">
+          <i class="ti ti-map-pin ci-icon"></i>
+          <div><div class="ci-label">Physical Address</div><div class="ci-val">Dlanubeka Building, Office G1<br>Plot CNR 2221, Mdada Street<br>Mbabane, Eswatini</div></div>
+        </div>
+        <div class="ci-row">
+          <i class="ti ti-mail-forward ci-icon"></i>
+          <div><div class="ci-label">Postal Address</div><div class="ci-val">P.O. Box A115, Mbabane, Eswatini</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-area">
+      <div class="label-tag">Get in touch</div>
+      <h3>Request a quote</h3>
+      <p>Tell us about your supply, construction, or procurement needs and we'll respond within 24 hours.</p>
+      <div class="cform">
+        <div class="frow">
+          <input type="text" placeholder="Your name">
+          <input type="text" placeholder="Organisation / company">
+        </div>
+        <div class="frow">
+          <input type="email" placeholder="Email address">
+          <input type="tel" placeholder="Phone number">
+        </div>
+        <select>
+          <option value="">Select service needed...</option>
+          <option>General Supply of Goods &amp; Equipment</option>
+          <option>Construction Services</option>
+          <option>Quantity Surveying &amp; Cost Consulting</option>
+          <option>Procurement Services</option>
+          <option>Logistics &amp; Delivery</option>
+          <option>Project Management</option>
+          <option>Multiple services</option>
+        </select>
+        <textarea placeholder="Describe your project or requirements — location, scope, timeline, budget range..."></textarea>
+        <button class="cform-btn">Send enquiry &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-brand">
+      <img src="images/logo.png.jpeg" alt="Urban Pulse Investments Logo">
+      <span class="footer-brand-name">Urban <span>Pulse</span></span>
+    </div>
+    <div class="footer-copy">&copy; 2026 Urban Pulse Investments (Pty) Ltd &middot; Co. No. R7/75486 &middot; Mbabane, Eswatini</div>
+    <div class="footer-links">
+      <a href="#">Facebook</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter / X</a>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
